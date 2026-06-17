@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Installer Troubleshooting & Return Codes</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f5f5f5; }
+    </style>
+</head>
+<body>
+    <h1>Installation Troubleshooting</h1>
+    <p>If your installation failed, find the return/exit code below to resolve the issue.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Return Code</th>
+                <th>Meaning / Error</th>
+                <th>How to Fix</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>0</strong></td>
+                <td>Success</td>
+                <td>The application installed successfully. No action required.</td>
+            </tr>
+            <tr>
+                <td><strong>1603</strong></td>
+                <td>Fatal error during installation</td>
+                <td>Common Windows Installer error. Run the installer as an Administrator or check if a previous version is pending a reboot.</td>
+            </tr>
+            <tr>
+                <td><strong>1618</strong></td>
+                <td>Another installation in progress</td>
+                <td>Another program is currently installing. Wait for it to finish, restart your PC, and try again.</td>
+            </tr>
+            <!-- Add your own custom app codes below -->
+            <tr>
+                <td><strong>1001</strong></td>
+                <td>Insufficient Disk Space</td>
+                <td>Free up at least 500MB of space on your main drive and try again.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Still need help?</h2>
+    <p>Contact our support team at <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>.</p>
+</body>
+</html>
